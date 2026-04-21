@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #F9F5EE;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.card {
+  background: #FFFDF8;
+  border: 2px solid #E8E0D0;
+  border-radius: 16px;
+  padding: 48px 56px;
+  max-width: 780px;
+  width: 100%;
+  box-shadow: 4px 6px 0px #E0D8C8;
+  position: relative;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+  border-bottom: 2px dashed #E0D4C0;
+}
+
+.agent-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.header h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2C2416;
+  line-height: 1.1;
+}
+
+.header h1 span {
+  font-family: 'Inter', monospace;
+  background: #F0E8D8;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 22px;
+}
+
+/* Tree */
+.tree {
+  font-family: 'Inter', monospace;
+  font-size: 13.5px;
+  line-height: 1;
+}
+
+.tree-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.tree-indent {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.tree-line {
+  width: 20px;
+  height: 20px;
+  border-left: 2px solid #C8BEA8;
+  border-bottom: 2px solid #C8BEA8;
+  margin-right: 4px;
+  margin-top: -10px;
+  flex-shrink: 0;
+}
+
+.tree-vline {
+  width: 20px;
+  height: 20px;
+  border-left: 2px solid #C8BEA8;
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+
+.tree-icon {
+  margin-right: 8px;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.tree-name {
+  font-weight: 500;
+  color: #2C2416;
+  padding: 3px 8px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+/* File type colors */
+.tag-committed   { background: #FDE8C8; color: #9B5C10; }
+.tag-personal    { background: #FFF3CD; color: #856404; border: 1.5px dashed #D4A820; }
+.tag-folder      { background: #E8E0F8; color: #5B3FA0; }
+.tag-config      { background: #D8EEF8; color: #1A6A9A; }
+.tag-command     { background: #D8F0E8; color: #1A7A50; }
+.tag-rule        { background: #F8E8F8; color: #8B3A8B; }
+.tag-agent       { background: #FFE8E8; color: #A03030; }
+.tag-skill       { background: #E8F4E8; color: #2E6E2E; }
+.tag-plain       { background: transparent; color: #6B5E4A; }
+
+/* Annotation */
+.annotation-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.annotation-spacer {
+  flex: 1;
+  border-bottom: 1.5px dotted #C8BEA8;
+  margin: 0 12px;
+  min-width: 20px;
+}
+
+.annotation-text {
+  font-size: 12px;
+  color: #7A6E5E;
+  white-space: nowrap;
+  font-style: italic;
+}
+
+.annotation-badge {
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-left: 6px;
+  white-space: nowrap;
+}
+
+.badge-git    { background: #D4EDDA; color: #155724; }
+.badge-ignore { background: #FFF3CD; color: #856404; }
+.badge-auto   { background: #CCE5FF; color: #004085; }
+
+/* Two column layout */
+.diagram {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0 0;
+}
+
+.tree-col { flex: 1; }
+.ann-col  { display: flex; flex-direction: column; padding-left: 8px; }
+
+/* Footer */
+.footer {
+  margin-top: 32px;
+  padding-top: 18px;
+  border-top: 2px dashed #E0D4C0;
+  font-family: 'Caveat', cursive;
+  font-size: 16px;
+  color: #9B8E7A;
+  text-align: center;
+}
+
+.footer strong {
+  color: #5B4A30;
+}
+
+/* git badge top-right */
+.git-badge {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  font-family: 'Caveat', cursive;
+  font-size: 13px;
+  color: #7A6E5E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.git-badge .arrow {
+  font-size: 18px;
+}

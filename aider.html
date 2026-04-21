@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anatomy of Aider config files</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+
+  <div class="git-badge">
+    <span class="arrow">↗</span>
+    <span>commit</span>
+    <span>aider</span>
+    <span>configs</span>
+  </div>
+
+  <div class="header">
+    <div class="agent-icon" style="background:#FFE0D8;">⌨️</div>
+    <h1>Anatomy of <span>Aider</span> config files</h1>
+  </div>
+
+  <table style="width:100%; border-collapse:collapse;">
+    <tbody>
+
+      <tr>
+        <td style="width:52%; vertical-align:middle; padding:5px 0;">
+          <div class="tree-row">
+            <span class="tree-icon">📁</span>
+            <span class="tree-name tag-plain">your-project/</span>
+          </div>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td style="vertical-align:middle; padding:5px 0;">
+          <div class="tree-row">
+            <div class="tree-indent"><div class="tree-line"></div></div>
+            <span class="tree-icon">⚙️</span>
+            <span class="tree-name tag-committed">.aider.conf.yml</span>
+          </div>
+        </td>
+        <td style="vertical-align:middle; padding:5px 0 5px 16px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <div style="flex:0 0 20px; border-bottom:1.5px dotted #C8BEA8;"></div>
+            <span style="font-size:12px; color:#7A6E5E; font-style:italic; white-space:nowrap;">model, flags, lint, test</span>
+            <span class="annotation-badge badge-git">committed</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="vertical-align:middle; padding:5px 0;">
+          <div class="tree-row">
+            <div class="tree-indent"><div class="tree-line"></div></div>
+            <span class="tree-icon">🚫</span>
+            <span class="tree-name tag-committed">.aiderignore</span>
+          </div>
+        </td>
+        <td style="vertical-align:middle; padding:5px 0 5px 16px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <div style="flex:0 0 20px; border-bottom:1.5px dotted #C8BEA8;"></div>
+            <span style="font-size:12px; color:#7A6E5E; font-style:italic; white-space:nowrap;">files aider can't touch</span>
+            <span class="annotation-badge badge-git">committed</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="vertical-align:middle; padding:5px 0;">
+          <div class="tree-row">
+            <div class="tree-indent"><div class="tree-line"></div></div>
+            <span class="tree-icon">📄</span>
+            <span class="tree-name tag-committed">CONVENTIONS.md</span>
+          </div>
+        </td>
+        <td style="vertical-align:middle; padding:5px 0 5px 16px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <div style="flex:0 0 20px; border-bottom:1.5px dotted #C8BEA8;"></div>
+            <span style="font-size:12px; color:#7A6E5E; font-style:italic; white-space:nowrap;">coding conventions, read every session</span>
+            <span class="annotation-badge badge-git">committed</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="vertical-align:middle; padding:5px 0;">
+          <div class="tree-row">
+            <div class="tree-indent"><div class="tree-line"></div></div>
+            <span class="tree-icon">💬</span>
+            <span class="tree-name tag-personal">.aider.chat.history.md</span>
+          </div>
+        </td>
+        <td style="vertical-align:middle; padding:5px 0 5px 16px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <div style="flex:0 0 20px; border-bottom:1.5px dotted #C8BEA8;"></div>
+            <span style="font-size:12px; color:#7A6E5E; font-style:italic; white-space:nowrap;">personal chat log</span>
+            <span class="annotation-badge badge-ignore">gitignored</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="vertical-align:middle; padding:5px 0;">
+          <div class="tree-row">
+            <div class="tree-indent"><div class="tree-line"></div></div>
+            <span class="tree-icon">🗂️</span>
+            <span class="tree-name tag-personal">.aider.tags.cache.v3/</span>
+          </div>
+        </td>
+        <td style="vertical-align:middle; padding:5px 0 5px 16px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <div style="flex:0 0 20px; border-bottom:1.5px dotted #C8BEA8;"></div>
+            <span style="font-size:12px; color:#7A6E5E; font-style:italic; white-space:nowrap;">local index cache</span>
+            <span class="annotation-badge badge-ignore">gitignored</span>
+          </div>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <div class="footer">
+    Three files to commit. Two to gitignore. That's the whole setup.<br>
+    <strong>github.com/agent-anatomy/aider</strong>
+  </div>
+
+</div>
+</body>
+</html>

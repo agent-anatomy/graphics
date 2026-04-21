@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anatomy of the .cursor/ folder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+
+  <div class="git-badge">
+    <span class="arrow">↗</span>
+    <span>commit</span>
+    <span>.cursor/</span>
+    <span>to git</span>
+  </div>
+
+  <div class="header">
+    <div class="agent-icon" style="background:#D8EEFF;">🖱️</div>
+    <h1>Anatomy of the <span>.cursor/</span> folder</h1>
+  </div>
+
+  <table style="width:100%; border-collapse:collapse;">
+    <tbody>
+
+      <tr>
+        <td style="width:52%; vertical-align:middle; padding:5px 0;">
+          <div class="tree-row">
+            <span class="tree-icon">📁</span>
+            <span class="tree-name tag-plain">your-project/</span>
+          </div>
+        </td>
+        <td style="vertical-align:middle; padding:5px 0 5px 16px;"></td>
+      </tr>
+
+      <tr>
+        <td style="vertical-align:middle; padding:5px 0;">
+          <div class="tree-row">
+            <div class="tree-indent"><div class="tree-line"></div></div>
+            <span class="tree-icon">📄</span>
+            <span class="tree-name tag-committed">.cursorrules</span>
+          </div>
+        </td>
+        <td style="vertical-align:middle; padding:5px 0 5px 16px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <div style="flex:0 0 20px; border-bottom:1.5px dotted #C8BEA8;"></div>
+            <span style="font-size:12px; color:#7A6E5E; font-style:italic; white-space:nowrap;">global rules, always applied</span>
+            <span class="annotation-badge badge-git">committed</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="vertical-align:middle; padding:5px 0;">
+          <div class="tree-row">
+            <div class="tree-indent"><div class="tree-line"></div></div>
+            <span class="tree-icon">📂</span>
+            <span class="tree-name tag-folder">.cursor/ ↓</span>
+          </div>
+        </td>
+        <td style="vertical-align:middle; padding:5px 0 5px 16px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <div style="flex:0 0 20px; border-bottom:1.5px dotted #C8BEA8;"></div>
+            <span style="font-size:12px; color:#7A6E5E; font-style:italic; white-space:nowrap;">the control center</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="vertical-align:middle; padding:5px 0;">
+          <div class="tree-row">
+            <div class="tree-indent"><div class="tree-vline"></div><div class="tree-line"></div></div>
+            <span class="tree-icon">📂</span>
+            <span class="tree-name tag-rule">rules/</span>
+          </div>
+        </td>
+        <td style="vertical-align:middle; padding:5px 0 5px 16px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <div style="flex:0 0 20px; border-bottom:1.5px dotted #C8BEA8;"></div>
+            <span style="font-size:12px; color:#7A6E5E; font-style:italic; white-space:nowrap;">modular rule files (.mdc)</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="vertical-align:middle; padding:3px 0;">
+          <div class="tree-row">
+            <div class="tree-indent"><div class="tree-vline"></div><div class="tree-vline"></div><div class="tree-line"></div></div>
+            <span class="tree-icon">📄</span>
+            <span class="tree-name tag-plain" style="font-size:12px;">code-style.mdc</span>
+          </div>
+        </td>
+        <td style="vertical-align:middle; padding:3px 0 3px 16px;">
+          <span style="font-size:11px; color:#9B8E7A; font-style:italic;">alwaysApply: true</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="vertical-align:middle; padding:3px 0;">
+          <div class="tree-row">
+            <div class="tree-indent"><div class="tree-vline"></div><div class="tree-vline"></div><div class="tree-line"></div></div>
+            <span class="tree-icon">📄</span>
+            <span class="tree-name tag-plain" style="font-size:12px;">testing.mdc</span>
+          </div>
+        </td>
+        <td style="vertical-align:middle; padding:3px 0 3px 16px;">
+          <span style="font-size:11px; color:#9B8E7A; font-style:italic;">alwaysApply: true</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="vertical-align:middle; padding:3px 0;">
+          <div class="tree-row">
+            <div class="tree-indent"><div class="tree-vline"></div><div class="tree-vline"></div><div class="tree-line"></div></div>
+            <span class="tree-icon">📄</span>
+            <span class="tree-name tag-plain" style="font-size:12px;">react-components.mdc</span>
+          </div>
+        </td>
+        <td style="vertical-align:middle; padding:3px 0 3px 16px;">
+          <span style="font-size:11px; color:#9B8E7A; font-style:italic;">globs: ["**/*.tsx"]</span>
+          <span class="annotation-badge badge-auto" style="margin-left:6px;">auto</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="vertical-align:middle; padding:5px 0;">
+          <div class="tree-row">
+            <div class="tree-indent"><div class="tree-vline"></div><div class="tree-line"></div></div>
+            <span class="tree-icon">⚙️</span>
+            <span class="tree-name tag-personal">mcp.json</span>
+          </div>
+        </td>
+        <td style="vertical-align:middle; padding:5px 0 5px 16px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <div style="flex:0 0 20px; border-bottom:1.5px dotted #C8BEA8;"></div>
+            <span style="font-size:12px; color:#7A6E5E; font-style:italic; white-space:nowrap;">MCP server config</span>
+            <span class="annotation-badge badge-ignore">gitignored</span>
+          </div>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <div class="footer">
+    Everything Cursor needs to know about your project lives right here.<br>
+    <strong>github.com/agent-anatomy/cursor</strong>
+  </div>
+
+</div>
+</body>
+</html>

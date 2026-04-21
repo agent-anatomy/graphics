@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Anatomy — Graphics</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 24px; }
+  .agent-card { background: #FFFDF8; border: 2px solid #E8E0D0; border-radius: 12px; padding: 20px; text-align: center; text-decoration: none; color: inherit; transition: box-shadow 0.15s; }
+  .agent-card:hover { box-shadow: 3px 4px 0px #E0D8C8; }
+  .agent-card .icon { font-size: 32px; margin-bottom: 10px; }
+  .agent-card .name { font-family: 'Caveat', cursive; font-size: 20px; font-weight: 700; color: #2C2416; }
+  .agent-card .file { font-family: monospace; font-size: 11px; color: #7A6E5E; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="card" style="max-width:860px;">
+  <div class="header">
+    <div class="agent-icon" style="background:#F0E8D8; font-size:28px;">🧬</div>
+    <h1>Agent <span>Anatomy</span> — Diagrams</h1>
+  </div>
+  <p style="color:#7A6E5E; font-size:14px;">Visual anatomy diagrams for every AI coding agent. Open any diagram, screenshot it, use as repo banner or social preview.</p>
+
+  <div class="grid">
+    <a href="claude.html" class="agent-card">
+      <div class="icon">✳️</div>
+      <div class="name">Claude Code</div>
+      <div class="file">.claude/</div>
+    </a>
+    <a href="cursor.html" class="agent-card">
+      <div class="icon">🖱️</div>
+      <div class="name">Cursor</div>
+      <div class="file">.cursor/rules/</div>
+    </a>
+    <a href="codex.html" class="agent-card">
+      <div class="icon">🤖</div>
+      <div class="name">Codex</div>
+      <div class="file">AGENTS.md</div>
+    </a>
+    <a href="windsurf.html" class="agent-card">
+      <div class="icon">🏄</div>
+      <div class="name">Windsurf</div>
+      <div class="file">.windsurfrules</div>
+    </a>
+    <a href="copilot.html" class="agent-card">
+      <div class="icon">🐙</div>
+      <div class="name">Copilot</div>
+      <div class="file">copilot-instructions.md</div>
+    </a>
+    <a href="aider.html" class="agent-card">
+      <div class="icon">⌨️</div>
+      <div class="name">Aider</div>
+      <div class="file">.aider.conf.yml</div>
+    </a>
+    <a href="gemini.html" class="agent-card">
+      <div class="icon">✨</div>
+      <div class="name">Gemini CLI</div>
+      <div class="file">GEMINI.md</div>
+    </a>
+  </div>
+
+  <div class="footer" style="margin-top:28px;">
+    <strong>github.com/agent-anatomy</strong>
+  </div>
+</div>
+</body>
+</html>
